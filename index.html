@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html>
-     <head> <!--tag méta dados-->
-        <link rel="stylesheet" href="style.css">
-        <title>Quiz matematica basica</title>
-        <meta name="description" content="um quiz interativo para testar seus conhecimentos em matematica">
-     </head>
-    <body> <!--tag parte visual-->
-        <header>
-            <!--cabeçalho-->
-            <h1>Quiz interativo para alunos de matemática CEAK</h1>
-            <p>Teste seus conhecimentos em matemática e veja qual pontuação você consegue fazer!</p>
-        </header>
-        <main> <!--tag conteúdo principal-->
-            <!--Essa seção é para a introdução-->
-            <section>
-                <h2>Sobre esse quiz</h2>
-                <p>Este quiz foi desenvolvido para testar seus conhecimentos em matemática básica, e é composto por uma série de perguntas envolvendo conceitos básicos de <strong>aritmética, algebra e geometria</strong></p>
-                <p>você ira relembrar o conceito de <abbr title="minimo multiplo comum">fração</abbr>  dentre outros conceitos básicos de operações numéricas fundamentais na aritmética</p>
-                <p>Você ira responder o maximo de perguntas que conseguir a respeito de cada <em>conceito matemático</em> e ao final verá qual a sua pontuação e nivel de conhecimento em matemática</p>
-            </section>
-            <!--perguntas-->
-            <section>
-                <!--pergunta multipla escolha 1-->
-                <h2>Pergunta 1: 11/50.9/6?</h2>
-                <f,orm >
-                    <input type="radio" value="33/100" id="p1a" name="pergunta 1">
-                    <label for="p1a">33/100</label><br>
-                    <input type="radio" value="99/100" id="p1b" name="pergunta 1">
-                    <label for="p1b">99/100</label><br>
-                    <input type="radio" value="66/45" id="p1c" name="pergunta 1">
-                    <label for="p1c">66/45</label><br>
-                </form>
-            </section>
-            <section>
-                <!--pergunta texto 2-->
-                <h2>Pergunta Qual o valor de x se, x=2/3+2/6?</h2>
-                <form >
-                    <input type="radio" value="x=4/9" id="p2a" name="pergunta 2">
-                    <label for="p2a">x=4/9</label><br>
-                    <input type="radio" value="x=1" id="p2b" name="pergunta 2">
-                    <label for="p2b">x=1</label><br>
-                    <input type="radio" value="x=2/9" id="p2c" name="pergunta 2">
-                    <label for="p2c">x=2/9</label><br>
-                </form>
-            </section>
-            <!--Pergunta seleção multipla 3-->
-            <h2>Pergunta 3:Foram comido 7 pedaços de uma pizza de 12 pedaços, qual fração representa a parte que sobrou?</h2>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Matemática Básica</title>
+    <meta name="description" content="Um quiz interativo para testar seus conhecimentos em matemática">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz interativo para alunos de matemática CEAK</h1>
+        <p>Teste seus conhecimentos em matemática e veja qual pontuação você consegue fazer!</p>
+    </header>
+
+    <main>
+        <!-- Seção de introdução -->
+        <section>
+            <h2>Sobre esse quiz</h2>
+            <p>Este quiz foi desenvolvido para testar seus conhecimentos em matemática básica, e é composto por uma série de perguntas envolvendo conceitos básicos de <strong>aritmética, álgebra e geometria</strong></p>
+            <p>Você irá relembrar o conceito de <abbr title="mínimo múltiplo comum">fração</abbr>, dentre outros conceitos básicos de operações numéricas fundamentais na aritmética.</p>
+            <p>Você irá responder o máximo de perguntas que conseguir e ao final verá qual sua pontuação e nível de conhecimento.</p>
+        </section>
+
+        <!-- Pergunta 1 -->
+        <section>
+            <h2>Pergunta 1: 11/50 + 9/6 = ?</h2>
+            <form>
+                <input type="radio" value="33/100" id="p1a" name="pergunta1">
+                <label for="p1a">33/100</label><br>
+                <input type="radio" value="99/100" id="p1b" name="pergunta1">
+                <label for="p1b">99/100</label><br>
+                <input type="radio" value="66/45" id="p1c" name="pergunta1">
+                <label for="p1c">66/45</label><br>
+            </form>
+        </section>
+
+        <!-- Pergunta 2 -->
+        <section>
+            <h2>Pergunta 2: Qual o valor de x se, x = 2/3 + 2/6?</h2>
+            <form>
+                <input type="radio" value="x=4/9" id="p2a" name="pergunta2">
+                <label for="p2a">x=4/9</label><br>
+                <input type="radio" value="x=1" id="p2b" name="pergunta2">
+                <label for="p2b">x=1</label><br>
+                <input type="radio" value="x=2/9" id="p2c" name="pergunta2">
+                <label for="p2c">x=2/9</label><br>
+            </form>
+        </section>
+
+        <!-- Pergunta 3 -->
+        <section>
+            <h2>Pergunta 3: Foram comidos 7 pedaços de uma pizza de 12 pedaços. Qual fração representa a parte que sobrou?</h2>
             <form>
                 <input type="radio" value="12/7" id="p3a" name="pergunta3">
                 <label for="p3a">12/7</label><br>
@@ -54,77 +58,84 @@
                 <input type="radio" value="5/12" id="p3c" name="pergunta3">
                 <label for="p3c">5/12</label><br>
             </form>
-            <section>
-                <!--pergunta 4 com imagem-->
-                <h2> Pergunta 4:Quanto vale 9/100? </h2>
-                <!--respostas em espressões algébricas-->
-                <form>
-                    <input type="radio" value="0,9" id="p4a" name="pergunta 4">
-                    <label for="p4a">0,9</label><br>
-                    <input type="radio" value="0,09" id="p1c" name="pergunta 4">
-                    <label for="p4b">0,09</label><br>
-                    <input type="radio" value="90" id="p1c" name="pergunta 4">
-                    <label for="p4c">90</label><br>
-                </form>  
-            </section>
-            <!--Tabela de pontuação-->
+        </section>
+
+        <!-- Pergunta 4 -->
+        <section>
+            <h2>Pergunta 4: Quanto vale 9/100?</h2>
+            <form>
+                <input type="radio" value="0,9" id="p4a" name="pergunta4">
+                <label for="p4a">0,9</label><br>
+                <input type="radio" value="0,09" id="p4b" name="pergunta4">
+                <label for="p4b">0,09</label><br>
+                <input type="radio" value="90" id="p4c" name="pergunta4">
+                <label for="p4c">90</label><br>
+            </form>
+        </section>
+
+        <!-- Tabela de pontuação -->
         <section>
             <h2>Tabela de Pontuação</h2>
-            <table border="1"> <!--tag para criar tabela-->
-                <thead> <!--cabeçalho de tabela-->
-                    <th>Pontuação</th>
-                    <th>Avaliação</th>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
                 </thead>
-                <tr> <!--tag cédula da tabela-->
-                    <td>0-2</td>
-                    <td>Não desista! Cada tentativa é uma oportunidade de você aprender</td>
-                </tr>
-                <tr>
-                    <td>3-6</td>
-                    <td>Parabéns! você foi bem mas pode melhorar</td>
-                </tr>
-                 <tr>
-                    <td>7-10</td>
-                    <td>Parabéns! você é incrivel</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Não desista! Cada tentativa é uma oportunidade de aprender.</td>
+                    </tr>
+                    <tr>
+                        <td>3-6</td>
+                        <td>Parabéns! Você foi bem, mas pode melhorar.</td>
+                    </tr>
+                    <tr>
+                        <td>7-10</td>
+                        <td>Parabéns! Você é incrível.</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
-        <!--lista de respostas-->
+
+        <!-- Respostas -->
         <section>
-            <h2>verifique suas respostas</h2>
-            <details> <!--tag para esconder informações-->
-            <summary>Clique aqui para ver as respostas</summary>
-            <ol>
-                <li>33/100</li>
-                <li>x=1</li>
-                <li>5/12</li>
-                <li>0,09</li>
-            </ol>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique aqui para ver as respostas</summary>
+                <ol>
+                    <li>33/100</li>
+                    <li>x=1</li>
+                    <li>5/12</li>
+                    <li>0,09</li>
+                </ol>
             </details>
-            </section>
-            <!--Formulário de Feedback-->
-            <section>
-                <h2>Nos dê o seu feedback</h2>
-                <fieldset> <!--tag borda do formulario-->
-                    <legend>informações de contato</legend><!--tag de legenda-->
-                <form> <!--tag para formulario-->
+        </section>
+
+        <!-- Feedback -->
+        <section>
+            <h2>Nos dê o seu feedback</h2>
+            <fieldset>
+                <legend>Informações de contato</legend>
+                <form>
                     <label for="name">Nome:</label>
                     <input type="text" id="name" name="name"><br>
-                    <label for="email">email:</label>
+                    <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email"><br>
-                    <!--tags e atributos para caixa de texto-->
-                    <label for="comentario">comentario</label><br>
-                    <textarea id="comentarios"
-                    name="comentarios" rows="4" cols="50"
-                    placeholder="Digite seus comentários aqui"></textarea>
-                    <button onclick="alert('Feeedback enviado')">Envie o seu feedback</button>
+                    <label for="comentarios">Comentário:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea>
+                    <br>
+                    <button type="button" onclick="alert('Feedback enviado')">Enviar Feedback</button>
                 </form>
-                </fieldset>
-            </section>
-        </main>
-        <footer> <!--rodapé-->
-            <p>Quiz de programação. Todos os direitos reservados.</p>
-            <p>Para conhecer outros quizzes <a href="https://google.com&quot; target="_blank">clique aqui.</a> </p>
-        </footer>
-    </body>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <p>Quiz de programação. Todos os direitos reservados.</p>
+        <p>Para conhecer outros quizzes <a href="https://google.com" target="_blank">clique aqui.</a></p>
+    </footer>
+</body>
 </html>
