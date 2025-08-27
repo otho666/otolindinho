@@ -1,76 +1,83 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Quiz Matemática Básica</title>
-    <meta name="description" content="Um quiz interativo para testar seus conhecimentos em matemática">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Operações com frações CEAK</title>
+  <meta name="description" content="um quiz interativo para testar seus conhecimentos em trigonometria" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Quiz interativo para alunos de matemática CEAK</h1>
-        <p>Teste seus conhecimentos em matemática e veja qual pontuação você consegue fazer!</p>
-    </header>
+  <header>
+    <h1>Operações com frações CEAK</h1>
+    <p>Teste seus conhecimentos com 4 questões sobre frações.</p>
+  </header>
 
-    <main>
-        <!-- Seção de introdução -->
-        <section>
-            <h2>Sobre esse quiz</h2>
-            <p>Este quiz foi desenvolvido para testar seus conhecimentos em matemática básica, e é composto por uma série de perguntas envolvendo conceitos básicos de <strong>aritmética, álgebra e geometria</strong></p>
-            <p>Você irá relembrar o conceito de <abbr title="mínimo múltiplo comum">fração</abbr>, dentre outros conceitos básicos de operações numéricas fundamentais na aritmética.</p>
-            <p>Você irá responder o máximo de perguntas que conseguir e ao final verá qual sua pontuação e nível de conhecimento.</p>
-        </section>
+  <main>
+    <section>
+      <h2>Sobre esse quiz</h2>
+      <p>Este quiz foi desenvolvido para testar seus conhecimentos sobre frações, envolvendo conceitos básicos da matemática.</p>
+    </section>
+
+    <form id="quizForm" action="https://formspree.io/f/meolojqa" method="POST">
+
+  <main>
+    <section>
+      <h2>Sobre esse quiz</h2>
+      <p>Este quiz foi desenvolvido para testar seus conhecimentos sobre operações envolvendo frações. Você precisará escolher as respostas corretas de acordo com o enunciado e, ao final, nos dar um feedback.</p>
+    </section>
+
+    <!-- Perguntas -->
 
         <!-- Pergunta 1 -->
         <section>
             <h2>Pergunta 1: 11/50 + 9/6 = ?</h2>
-            <form>
+        
                 <input type="radio" value="33/100" id="p1a" name="pergunta1">
                 <label for="p1a">33/100</label><br>
-                <input type="radio" value="99/100" id="p1b" name="pergunta1">
-                <label for="p1b">99/100</label><br>
+                <input type="radio" value="43/25" id="p1b" name="pergunta1">
+                <label for="p1b">43/25</label><br>
                 <input type="radio" value="66/45" id="p1c" name="pergunta1">
                 <label for="p1c">66/45</label><br>
-            </form>
+            
         </section>
 
         <!-- Pergunta 2 -->
         <section>
             <h2>Pergunta 2: Qual o valor de x se, x = 2/3 + 2/6?</h2>
-            <form>
+            
                 <input type="radio" value="x=4/9" id="p2a" name="pergunta2">
                 <label for="p2a">x=4/9</label><br>
                 <input type="radio" value="x=1" id="p2b" name="pergunta2">
                 <label for="p2b">x=1</label><br>
                 <input type="radio" value="x=2/9" id="p2c" name="pergunta2">
                 <label for="p2c">x=2/9</label><br>
-            </form>
+            
         </section>
 
         <!-- Pergunta 3 -->
         <section>
             <h2>Pergunta 3: Foram comidos 7 pedaços de uma pizza de 12 pedaços. Qual fração representa a parte que sobrou?</h2>
-            <form>
+            
                 <input type="radio" value="12/7" id="p3a" name="pergunta3">
                 <label for="p3a">12/7</label><br>
                 <input type="radio" value="7/12" id="p3b" name="pergunta3">
                 <label for="p3b">7/12</label><br>
                 <input type="radio" value="5/12" id="p3c" name="pergunta3">
                 <label for="p3c">5/12</label><br>
-            </form>
+            
         </section>
 
         <!-- Pergunta 4 -->
         <section>
             <h2>Pergunta 4: Quanto vale 9/100?</h2>
-            <form>
+            
                 <input type="radio" value="0,9" id="p4a" name="pergunta4">
                 <label for="p4a">0,9</label><br>
                 <input type="radio" value="0,09" id="p4b" name="pergunta4">
                 <label for="p4b">0,09</label><br>
                 <input type="radio" value="90" id="p4c" name="pergunta4">
                 <label for="p4c">90</label><br>
-            </form>
+            
         </section>
 
         <!-- Tabela de pontuação -->
@@ -106,7 +113,7 @@
             <details>
                 <summary>Clique aqui para ver as respostas</summary>
                 <ol>
-                    <li>33/100</li>
+                    <li>43/25</li>
                     <li>x=1</li>
                     <li>5/12</li>
                     <li>0,09</li>
@@ -114,23 +121,103 @@
             </details>
         </section>
 
-        <!-- Feedback -->
         <section>
-            <h2>Nos dê o seu feedback</h2>
-            <fieldset>
-                <legend>Informações de contato</legend>
-                <form>
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="comentarios">Comentário:</label><br>
-                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea>
-                    <br>
-                    <button type="button" onclick="alert('Feedback enviado')">Enviar Feedback</button>
-                </form>
-            </fieldset>
+            <h2>Tabela de Pontuação</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Não desista! Continue tentando!</td>
+                    </tr>
+                    <tr>
+                        <td>2-3</td>
+                        <td>Bom trabalho, você pode melhorar!</td>
+                    </tr>
+                    <tr>
+                        <td>3-5</td>
+                        <td>Excelente! Você arrasou!</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
+      
+<section>
+        <h2>Nos dê o seu feedback</h2>
+        <fieldset>
+          <legend>Informações de contato</legend>
+
+          <label for="name">Nome:</label><br>
+          <input type="text" id="name" name="nome" required /><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="_replyto" required /><br>
+
+          <label for="comentario">Comentário:</label><br>
+          <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Digite seus comentários aqui" required></textarea><br>
+
+          <!-- Campos ocultos preenchidos via JS -->
+          <input type="hidden" id="campoAcertos" name="Acertos" />
+          <input type="hidden" id="campoErros" name="Erros" />
+          <input type="hidden" id="campoResumo" name="Resumo_das_respostas" />
+
+          <button type="button" onclick="processarEEnviar()">Enviar respostas e feedback</button>
+        </fieldset>
+      </section>
+    </form>
+  </main>
+
+  <footer>
+    <p>Quiz de matemática. Todos os direitos reservados.</p>
+    <p>Para conhecer outros quizzes <a href="https://flgferas.github.io/sitenovoleo/" target="_blank" rel="noopener noreferrer">clique aqui.</a></p>
+  </footer>
+
+  <script>
+    function processarEEnviar() {
+      const form = document.getElementById('quizForm');
+
+      const gabarito = {
+        pergunta1: 'b:43/25', // Exemplo de resposta correta para pergunta 1
+        pergunta2: 'b:1', // Exemplo de resposta correta para pergunta 2
+        pergunta3: 'c:5/12', // Exemplo de resposta correta para pergunta 3
+        pergunta4: 'b:0,09', // Exemplo de resposta correta para pergunta 4
+      };
+
+      let acertos = 0;
+      let erros = 0;
+      let resumo = '';
+
+      for (let i = 1; i <= 10; i++) {
+        const nome = `pergunta${i}`;
+        const resposta = form.querySelector(`input[name="${nome}"]:checked`);
+        const valor = resposta ? resposta.value : 'sem resposta';
+
+        resumo += `Pergunta ${i}: ${valor}\n`;
+
+        if (valor === gabarito[nome]) {
+          acertos++;
+        } else {
+          erros++;
+        }
+      }
+
+      document.getElementById('campoAcertos').value = acertos;
+      document.getElementById('campoErros').value = erros;
+      document.getElementById('campoResumo').value = resumo.trim();
+
+      alert(`Você acertou ${acertos} de 4 perguntas.`);
+
+      form.submit();
+    }
+  </script>
+</body>
+</html>
+
     </main>
 
     <footer>
