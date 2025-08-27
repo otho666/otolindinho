@@ -1,22 +1,56 @@
-/* RESET BÁSICO */
+/* RESET BÁSICO - remove margens e espaçamentos padrão dos navegadores */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ESTILO GERAL DO CORPO */
+/* ESTILO GERAL DO CORPO DA PÁGINA */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #f5f5f5;
   color: #333;
   padding: 20px;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image:
+    linear-gradient(-45deg, rgba(197, 7, 250, 0.6), rgba(183, 15, 225, 0.776), rgba(190, 13, 217, 0.6), rgba(0, 47, 95, 0.6)),
+    url('https://www.transparenttextures.com/patterns/symphony.png');
+  background-size: 400% 400%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  animation: animacaoFundo 15s ease infinite;
+}
+
+@keyframes animacaoFundo {
+  0% { background-position: 0% 50%, center; }
+  50% { background-position: 100% 50%, center; }
+  100% { background-position: 0% 50%, center; }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.5) 0%, transparent 70%),
+    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.4) 0%, transparent 70%),
+    radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  background-repeat: no-repeat;
+  animation: flashes 4s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes flashes {
+  0%, 100% { background-size: 0 0, 0 0, 0 0; }
+  50% { background-size: 180px 180px, 130px 130px, 150px 150px; }
 }
 
 /* CABEÇALHO */
 header {
-  background: #004080;
+  background: #ee0ef5;
   color: white;
   padding: 20px;
   text-align: center;
@@ -36,22 +70,26 @@ main {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* SEÇÕES */
+/* SEÇÕES DO CONTEÚDO */
 section {
   margin-bottom: 30px;
 }
 
 section h2 {
-  color: #004080;
+  margin-bottom: 10px;
+  color: #654763;
+}
+
+/* FORMULÁRIOS */
+form {
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* FORMULÁRIOS E PERGUNTAS */
-form {
-  margin-top: 10px;
+.form-group {
   margin-bottom: 10px;
 }
 
@@ -60,7 +98,6 @@ input[type="checkbox"] {
   margin-right: 8px;
 }
 
-/* CAMPOS DE TEXTO */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -74,7 +111,7 @@ textarea {
 
 /* BOTÃO */
 button {
-  background: #004080;
+  background: #cb12cb;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -84,7 +121,7 @@ button {
 }
 
 button:hover {
-  background: #002f5f;
+  background: #c304c3;
 }
 
 /* TABELA DE PONTUAÇÃO */
@@ -102,33 +139,33 @@ table td {
 }
 
 table th {
-  background: #004080;
+  background: #8210a4;
   color: white;
 }
 
-/* DETALHES E RESPOSTAS */
-details summary {
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #004080;
-}
-
-ol {
-  padding-left: 20px;
-}
-
-/* FORMULÁRIO DE FEEDBACK */
+/* FIELDSET E LEGEND */
 fieldset {
-  border: 2px solid #004080;
+  border: 2px solid #750e85;
   padding: 15px;
   border-radius: 5px;
 }
 
 legend {
   font-weight: bold;
-  color: #004080;
+  color: #8f0da3;
+}
+
+/* DETAILS */
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #a42195;
+}
+
+/* LISTA ORDENADA */
+ol {
+  padding-left: 20px;
 }
 
 /* RODAPÉ */
@@ -137,11 +174,11 @@ footer {
   margin-top: 40px;
   padding: 20px;
   font-size: 0.9em;
-  color: #777;
+  color: #0e0000ef;
 }
 
 footer a {
-  color: #004080;
+  color: #841dc0;
   text-decoration: none;
 }
 
