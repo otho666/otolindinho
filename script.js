@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'pergunta1': '43/25',
     'pergunta2': 'x=1', // corrigido
     'pergunta3': '5/12',
-    'pergunta4': '0,09'
+    'pergunta4': '0,09',
   };
 
   const main = document.querySelector('main');
@@ -56,12 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('campoAcertos').value = acertos;
     document.getElementById('campoErros').value = erros;
 
-    const respostasResumo = 
-      `Pergunta1: ${p1 ? p1.value : 'sem resposta'}\n` +
-      `Pergunta2: ${p2 ? p2.value : 'sem resposta'}\n` +
-      `Pergunta3: ${p3 ? p3.value : 'sem resposta'}\n` +
-      `Pergunta4: ${p4 ? p4.value : 'sem resposta'}`;
-    document.getElementById('campoResumo').value = respostasResumo.trim();
+    const respostasResumo = `
+   Pergunta1: ${p1 ? p1.value : 'sem resposta'}
+      Pergunta2: ${p2 ? p2.value : 'sem resposta'}
+      Pergunta3: ${p3 ? p3.value : 'sem resposta'}
+      Pergunta4: ${p4 ? p4.value : 'sem resposta'}
+    `;
+document.getElementById('campoResumo').value = respostasResumo.trim();
 
     resultadoDiv.innerHTML = `
       <p><strong>Resultado para ${email}</strong></p>
