@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Objeto com as respostas corretas (gabarito) do quiz
   // Cada chave representa o "name" do input da pergunta
 const gabarito = {
-    'pergunta1': 'b:43/25', // Exemplo de resposta correta para pergunta 1
-    'pergunta2': 'b:1', // Exemplo de resposta correta para pergunta 2
-    'pergunta3': 'c:5/12', // Exemplo de resposta correta para pergunta 3
-    'pergunta4': 'b:0,09', // Exemplo de resposta correta para pergunta 4
+    'pergunta1': '43/25', // Exemplo de resposta correta para pergunta 1
+    'pergunta2': '1', // Exemplo de resposta correta para pergunta 2
+    'pergunta3': '5/12', // Exemplo de resposta correta para pergunta 3
+    'pergunta4': '0,09', // Exemplo de resposta correta para pergunta 4
 
   };
 
